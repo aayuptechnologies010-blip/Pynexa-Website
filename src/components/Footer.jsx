@@ -58,9 +58,7 @@ const Footer = () => {
           <p className="text-gray-500 text-sm font-bold uppercase tracking-wider">
             &copy; {currentYear} PYNEXA Technologies. All rights reserved.
           </p>
-          <p className="text-gray-500 text-sm flex items-center gap-1 font-bold tracking-wider uppercase">
-            Designed & Developed by <a href="https://www.aayuptechnologies.com/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:text-brand-cyan transition-colors">Aayup Technologies</a>
-          </p>
+
         </div>
       </div>
     </footer>
