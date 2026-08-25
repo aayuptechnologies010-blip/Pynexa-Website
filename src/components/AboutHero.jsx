@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+import aboutHeroImage from '../assets/about_hero.png';
+
 const AboutHero = () => {
   return (
     <section className="relative pt-32 pb-24 bg-brand-light overflow-hidden">
@@ -58,7 +60,7 @@ const AboutHero = () => {
                 className="relative z-10"
               >
                 <img 
-                  src="/src/assets/about_hero.png" 
+                  src={aboutHeroImage} 
                   alt="Software Development Technology" 
                   className="w-full h-auto object-cover rounded-2xl shadow-2xl drop-shadow-[0_20px_50px_rgba(7,91,255,0.2)] border border-gray-100"
                 />

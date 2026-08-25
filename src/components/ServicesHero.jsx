@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+import serviceHeroImage from '../assets/service_hero.png';
+
 const ServicesHero = () => {
   const highlights = [
     "Modern Design",
@@ -75,7 +77,7 @@ const ServicesHero = () => {
                 className="relative z-10 w-full flex items-center justify-center"
               >
                 <img 
-                  src="/src/assets/service_hero.png" 
+                  src={serviceHeroImage} 
                   alt="PYNEXA Digital Services" 
                   className="w-full lg:scale-110 h-auto object-contain drop-shadow-[0_20px_50px_rgba(7,91,255,0.2)]"
                 />

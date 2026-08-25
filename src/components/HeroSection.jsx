@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiCode, FiLayout, FiCheckCircle, FiSend } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+import heroImage from '../assets/home_hero section.png';
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen pt-32 pb-20 overflow-hidden bg-brand-navy">
@@ -73,7 +75,7 @@ const HeroSection = () => {
                 className="relative z-10 w-full"
               >
                 <img 
-                  src="/src/assets/home_hero section.png" 
+                  src={heroImage} 
                   alt="PYNEXA Technologies Web Solutions" 
                   className="w-full h-auto object-contain rounded-2xl drop-shadow-[0_20px_50px_rgba(0,198,255,0.2)]"
                 />

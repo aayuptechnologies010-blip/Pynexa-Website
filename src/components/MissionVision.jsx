@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import aboutS2Image from '../assets/about_s2.png';
 
 const MissionVision = () => {
   return (
@@ -57,7 +58,7 @@ const MissionVision = () => {
                   className="relative z-10"
                 >
                   <img 
-                    src="/src/assets/about_s2.png" 
+                    src={aboutS2Image} 
                     alt="PYNEXA Vision and Technology" 
                     className="w-full h-auto object-cover rounded-2xl shadow-2xl drop-shadow-[0_20px_50px_rgba(7,91,255,0.2)] border border-gray-100"
                   />
