@@ -39,6 +39,7 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-600 hover:text-brand-primary transition-colors flex items-center gap-2"><span className="w-2 h-[2px] bg-brand-primary"></span> About Us</Link></li>
               <li><Link to="/founder" className="text-gray-600 hover:text-brand-primary transition-colors flex items-center gap-2"><span className="w-2 h-[2px] bg-brand-primary"></span> Meet Founder</Link></li>
               <li><Link to="/why-us" className="text-gray-600 hover:text-brand-primary transition-colors flex items-center gap-2"><span className="w-2 h-[2px] bg-brand-primary"></span> Why Choose Us</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-600 hover:text-brand-primary transition-colors flex items-center gap-2"><span className="w-2 h-[2px] bg-brand-primary"></span> Privacy Policy</Link></li>
             </ul>
           </div>
 

@@ -14,6 +14,7 @@ import WhyUs from './pages/WhyUs';
 import Founder from './pages/Founder';
 import Contact from './pages/Contact';
 import FloatingContact from './components/FloatingContact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/founder" element={<Founder />} />
             <Route path="/get-quote" element={<GetQuote />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <FloatingContact />
