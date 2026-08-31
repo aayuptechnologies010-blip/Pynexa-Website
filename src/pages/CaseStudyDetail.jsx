@@ -16,6 +16,7 @@ const CaseStudyDetail = () => {
       </div>
     );
   }
+  
 
   return (
     <div className="bg-white min-h-screen">
