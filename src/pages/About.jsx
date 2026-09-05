@@ -1,4 +1,4 @@
-import AboutHero from '../components/AboutHero';
+﻿import AboutHero from '../components/AboutHero';
 import WhoWeAre from '../components/WhoWeAre';
 import WhatWeBelieve from '../components/WhatWeBelieve';
 import MissionVision from '../components/MissionVision';
@@ -8,6 +8,7 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import CoreValues from '../components/CoreValues';
 import Commitment from '../components/Commitment';
 import CTASection from '../components/CTASection';
+import OurJourney from '../components/OurJourney';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import ownerImg from '../assets/owner.jpeg';
@@ -105,6 +106,9 @@ const About = () => {
       {/* 11. Our Commitment */}
       <Commitment />
 
+      {/* Our Journey */}
+      <OurJourney />
+
       {/* 12. Final CTA */}
       <CTASection />
     </div>
@@ -112,3 +116,4 @@ const About = () => {
 };
 
 export default About;
+

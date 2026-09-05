@@ -1,7 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FiArrowLeft, FiCheck, FiArrowRight } from 'react-icons/fi';
+import { FiArrowLeft, FiCheck, FiArrowRight, FiFileText, FiClock } from 'react-icons/fi';
 import CTASection from '../components/CTASection';
+import { registrationServices } from '../data/registrationServicesData';
 
 // Full service data matching the services page
 const allServicesData = [
@@ -183,9 +184,24 @@ const allServicesData = [
   }
 ];
 
+const registrationDetailList = registrationServices.map(r => ({
+  id: r.id,
+  icon: r.id === "gst-registration" ? "📑" : r.id === "msme-udyam-registration" ? "🎖️" : r.id === "company-incorporation" ? "🏛️" : "🥗",
+  title: r.title,
+  tagline: r.tagline,
+  desc: r.desc,
+  features: r.features,
+  documentsRequired: r.documentsRequired,
+  turnaround: r.turnaround,
+  whyUs: r.whyUs,
+  isRegistration: true
+}));
+
+const combinedServicesData = [...allServicesData, ...registrationDetailList];
+
 const ServiceDetail = () => {
   const { id } = useParams();
-  const service = allServicesData.find(s => s.id === id);
+  const service = combinedServicesData.find(s => s.id === id);
 
   if (!service) {
     return (
@@ -215,6 +231,11 @@ const ServiceDetail = () => {
             className="max-w-4xl"
           >
             <div className="text-5xl mb-6">{service.icon}</div>
+            {service.turnaround && (
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-500/30">
+                <FiClock /> Turnaround: {service.turnaround}
+              </div>
+            )}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4 leading-tight">
               {service.tagline}
             </h1>
@@ -251,6 +272,32 @@ const ServiceDetail = () => {
                   ))}
                 </div>
               </motion.div>
+
+              {/* Documents Required (if applicable) */}
+              {service.documentsRequired && (
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.15 }}
+                >
+                  <h2 className="text-2xl font-bold text-brand-navy mb-4 uppercase tracking-widest">
+                    Documents Required
+                  </h2>
+                  <p className="text-sm text-gray-500 font-light mb-6">
+                    Digital copies (clear photos or PDF scans) of the following documents are needed for verification & filing:
+                  </p>
+                  <div className="space-y-3">
+                    {service.documentsRequired.map((doc, idx) => (
+                      <div key={idx} className="flex items-center gap-3 p-4 rounded-xl border border-emerald-100 bg-emerald-50/50">
+                        <div className="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 text-xs font-bold">
+                          {idx + 1}
+                        </div>
+                        <span className="text-slate-800 font-medium text-sm">{doc}</span>
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
 
               {/* Why Choose Us For This */}
               <motion.div 
@@ -302,9 +349,9 @@ const ServiceDetail = () => {
               <div>
                 <h3 className="font-bold text-brand-navy tracking-widest uppercase text-sm mb-4">Other Services</h3>
                 <div className="space-y-2">
-                  {allServicesData
+                  {combinedServicesData
                     .filter(s => s.id !== id)
-                    .slice(0, 4)
+                    .slice(0, 5)
                     .map((s, idx) => (
                     <Link 
                       key={idx}

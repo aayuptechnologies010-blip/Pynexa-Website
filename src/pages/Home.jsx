@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import TrustSection from '../components/TrustSection';
 import ServicesSection from '../components/ServicesSection';
+import BusinessRegistrationSection from '../components/BusinessRegistrationSection';
 import HowWeWork from '../components/HowWeWork';
 import WhyChooseUs from '../components/WhyChooseUs';
 import PortfolioSection from '../components/PortfolioSection';
@@ -17,8 +18,11 @@ const Home = () => {
       {/* 2. Trust / Intro */}
       <TrustSection />
       
-      {/* 3. Services */}
+      {/* 3. Services (Core Web Solutions) */}
       <ServicesSection />
+
+      {/* 3.1 Business Registration Services (Additional Value Added) */}
+      <BusinessRegistrationSection />
       
       {/* 4. How We Work */}
       <HowWeWork />

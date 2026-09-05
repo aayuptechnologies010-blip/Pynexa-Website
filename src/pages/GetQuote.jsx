@@ -14,12 +14,15 @@ const GetQuote = () => {
 
   const services = [
     'Business Website',
-    'E-Commerce',
-    'Portfolio',
-    'Landing Page',
+    'E-Commerce Store',
     'Custom Web Application',
+    'Landing Page Development',
     'Website Redesign',
-    'Other'
+    'GST Registration',
+    'MSME / Udyam Registration',
+    'Company Incorporation',
+    'FSSAI Food License',
+    'Other / Custom Requirement'
   ];
 
   const handleNext = () => setStep(prev => Math.min(prev + 1, 3));

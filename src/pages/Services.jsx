@@ -1,6 +1,7 @@
 import ServicesHero from '../components/ServicesHero';
 import WhatWeOffer from '../components/WhatWeOffer';
 import MainServices from '../components/MainServices';
+import RegistrationServicesList from '../components/RegistrationServicesList';
 import WhyChooseUs from '../components/WhyChooseUs';
 import OurProcess from '../components/OurProcess';
 import Technologies from '../components/Technologies';
@@ -18,10 +19,13 @@ const Services = () => {
       {/* 02. What We Offer */}
       <WhatWeOffer />
 
-      {/* 03. Main Services (8 cards) */}
+      {/* 03. Main Services (Web & Digital Solutions - 8 cards) */}
       <MainServices />
 
-      {/* 04. Why Choose PYNEXA */}
+      {/* 04. Business Registration Services */}
+      <RegistrationServicesList />
+
+      {/* 05. Why Choose PYNEXA */}
       <WhyChooseUs />
 
       {/* 05. Our Development Process */}
