@@ -13,37 +13,37 @@ import CTASection from '../components/CTASection';
 const Services = () => {
   return (
     <div className="bg-white">
-      {/* 01. Services Hero */}
-      <ServicesHero />
-
-      {/* 02. What We Offer */}
-      <WhatWeOffer />
-
-      {/* 03. Main Services (Web & Digital Solutions - 8 cards) */}
+      {/* 01. Main Services (Web & Digital Solutions - 8 cards) */}
       <MainServices />
 
-      {/* 04. Business Registration Services */}
+      {/* 02. Business Registration Services */}
       <RegistrationServicesList />
+
+      {/* 03. Digital Solutions & Overview (Moved downside) */}
+      <ServicesHero />
+
+      {/* 04. What We Offer */}
+      <WhatWeOffer />
 
       {/* 05. Why Choose PYNEXA */}
       <WhyChooseUs />
 
-      {/* 05. Our Development Process */}
+      {/* 06. Our Development Process */}
       <OurProcess />
 
-      {/* 06. Technologies */}
+      {/* 07. Technologies */}
       <Technologies />
 
-      {/* 07. Who We Serve */}
+      {/* 08. Who We Serve */}
       <WhoWeServe />
 
-      {/* 08. Find Your Solution */}
+      {/* 09. Find Your Solution */}
       <FindYourSolution />
 
-      {/* 09. FAQ */}
+      {/* 10. FAQ */}
       <FAQSection />
 
-      {/* 10. Final CTA */}
+      {/* 11. Final CTA */}
       <CTASection />
     </div>
   );

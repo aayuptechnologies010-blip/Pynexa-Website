@@ -13,7 +13,7 @@ const ServicesHero = () => {
   ];
 
   return (
-    <section className="relative pt-32 pb-24 bg-white overflow-hidden">
+    <section className="relative py-20 md:py-24 bg-white overflow-hidden border-t border-gray-100">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-cyan/5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -26,7 +26,7 @@ const ServicesHero = () => {
             className="w-full lg:w-1/2"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-primary/10 rounded-full text-brand-primary text-sm font-bold tracking-widest uppercase mb-8 border border-brand-primary/20">
-              OUR SERVICES
+              CUSTOM BUILT FOR YOU
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy mb-6 tracking-tight leading-tight">
@@ -41,9 +41,9 @@ const ServicesHero = () => {
               <Link to="/get-quote" className="px-8 py-4 bg-brand-primary hover:bg-brand-cyan text-white font-bold uppercase tracking-wider transition-colors shadow-lg rounded-full flex items-center justify-center gap-2">
                 Get a Free Quote <FiArrowRight />
               </Link>
-              <a href="#services-list" className="px-8 py-4 bg-brand-light text-brand-navy hover:bg-gray-200 font-bold uppercase tracking-wider transition-colors rounded-full flex items-center justify-center gap-2">
-                Explore Services <span className="rotate-90"><FiArrowRight /></span>
-              </a>
+              <Link to="/contact" className="px-8 py-4 bg-brand-light text-brand-navy hover:bg-gray-200 font-bold uppercase tracking-wider transition-colors rounded-full flex items-center justify-center gap-2">
+                Contact Our Team <FiArrowRight />
+              </Link>
             </div>
 
             <div className="flex flex-wrap gap-x-6 gap-y-3">
