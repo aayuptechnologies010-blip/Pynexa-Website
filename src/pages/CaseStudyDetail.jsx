@@ -9,6 +9,7 @@ const CaseStudyDetail = () => {
   const project = portfolioData.find(p => p.id === id);
 
   if (!project) {
+    
     return (
       <div className="pt-32 pb-24 text-center min-h-screen bg-brand-light">
         <h2 className="text-3xl text-brand-navy font-bold mb-4">Project Not Found</h2>
