@@ -47,7 +47,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-brand-navy font-bold uppercase tracking-wider mb-2">Phone Number</h4>
-                  <p className="text-gray-600 font-light">8081522864</p>
+                  <p className="text-gray-600 font-light">9180522864</p>
                 </div>
               </div>
 
@@ -67,8 +67,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-brand-navy font-bold uppercase tracking-wider mb-2">WhatsApp</h4>
-                  <a href="https://wa.me/918081522864" target="_blank" rel="noreferrer" className="text-gray-600 font-light hover:text-[#25D366] transition-colors border-b border-transparent hover:border-[#25D366]">
-                    8081522864 (Click to chat)
+                  <a href="https://wa.me/919180522864" target="_blank" rel="noreferrer" className="text-gray-600 font-light hover:text-[#25D366] transition-colors border-b border-transparent hover:border-[#25D366]">
+                    9180522864 (Click to chat)
                   </a>
                 </div>
               </div>

@@ -119,8 +119,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Call Us</p>
-                      <a href="tel:+918081522864" className="text-lg font-medium text-brand-navy hover:text-brand-primary transition-colors">
-                        +91 8081522864
+                      <a href="tel:+919180522864" className="text-lg font-medium text-brand-navy hover:text-brand-primary transition-colors">
+                        +91 9180522864
                       </a>
                     </div>
                   </div>

@@ -333,7 +333,7 @@ const ServiceDetail = () => {
                   Get a Free Quote <FiArrowRight />
                 </Link>
                 <a 
-                  href="https://wa.me/918081522864"
+                  href="https://wa.me/919180522864"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full px-6 py-4 mt-4 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold uppercase tracking-widest rounded-full transition-colors shadow-lg text-sm"

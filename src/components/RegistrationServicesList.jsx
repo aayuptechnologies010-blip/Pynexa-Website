@@ -120,7 +120,7 @@ const RegistrationServicesList = () => {
                 </Link>
                 <div className="flex items-center gap-2">
                   <a
-                    href="https://wa.me/918081522864"
+                    href="https://wa.me/919180522864"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 sm:flex-none text-center px-4 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold text-xs uppercase tracking-wider transition-colors"
@@ -154,7 +154,7 @@ const RegistrationServicesList = () => {
             </div>
           </div>
           <a
-            href="https://wa.me/918081522864"
+            href="https://wa.me/919180522864"
             target="_blank"
             rel="noopener noreferrer"
             className="whitespace-nowrap px-8 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-widest transition-all shadow-lg"

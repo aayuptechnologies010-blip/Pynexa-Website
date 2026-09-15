@@ -37,7 +37,7 @@ const CTASection = () => {
             </Link>
             
             <a 
-              href="https://wa.me/918081522864" 
+              href="https://wa.me/919180522864" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-10 py-5 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(37,211,102,0.4)] rounded-full"
